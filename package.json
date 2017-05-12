@@ -1,0 +1,48 @@
+{
+  "name": "ang2-babel-webpack",
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "webpack -d --watch",
+    "devbuild": "webpack --progress",
+    "prodbuild" : "webpack -p",
+    "serve": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --inline"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~2.3.0",
+    "@angular/compiler": "~2.3.0",
+    "@angular/core": "~2.3.0",
+    "@angular/forms": "~2.3.0",
+    "@angular/http": "~2.3.0",
+    "@angular/platform-browser": "~2.3.0",
+    "@angular/platform-browser-dynamic": "~2.3.0",
+    "@angular/router": "~3.3.0",
+    "@angular/upgrade": "~2.3.0",
+    "angular-in-memory-web-api": "~0.1.16",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-rc.4",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-polyfill": "^6.23.0",
+    "concurrently": "^3.3.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0",
+    "html-webpack-plugin" : "^2.28.0",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.10.0",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "bootstrap": "^3.3.7",
+    "bootstrap-webpack": "0.0.5",
+    "less-loader": "^2.2.3",
+    "imports-loader": "^0.7.0",
+    "exports-loader": "^0.6.3"
+  }
+}

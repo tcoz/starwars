@@ -1,0 +1,15 @@
+<div class="detail_holder">
+    <div class="detail_title">Details (raw)</div>
+    <div class="detail_items_holder">
+        <div *ngFor="let prop of display_properties">
+            <div class="detail_item">
+                <div class="detail_item_title">{{ prop }}</div>
+                {{ data [ prop ] }}
+            </div>
+        </div>
+        <div [ngStyle]="{ display : ( data?.title ? 'none' : '' ), color : 'red', 'text-align' : 'center' }"
+             class="detail_item">
+            <b>Select a Movie!</b>
+        </div>
+    </div>
+</div>

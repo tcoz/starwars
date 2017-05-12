@@ -1,0 +1,51 @@
+.list_holder {
+    border: 2px solid lightgrey;
+    border-radius: 5px 5px 5px 5px;
+    width: 275px;
+    height: 350px;
+}
+
+.list_title {
+    padding: 5px 5px 0px 5px;
+    color: lightblue;
+    cursor: default;
+    text-align: center;
+    font-weight: bold;
+}
+
+.list_sorter {
+    font-size: 12px;
+    color: lightgreen;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.list_item_holder {
+    height: calc(100% - 47px);
+    background-color: lightgrey;
+    overflow: scroll;
+}
+
+.list_item {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.list_item:hover {
+    background-color: lightblue;
+}
+
+.title_bg {
+    padding: 5px;
+    background-color: #e4e4e4;
+}
+
+.release_bg {
+    padding: 5px;
+    background-color: #d9c7d0;
+}
