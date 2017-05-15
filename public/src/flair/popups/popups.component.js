@@ -39,7 +39,7 @@ PopupsComponent.annotations = [
     new Component ( {
         selector: 'popups',
         templateUrl: require ( './popups.component.html' ),
-        styleUrls: [ 'public/src/flair/popups/popups.component.css' ]
+        styleUrls: [ 'assets/css/popups.component.css' ]
     })
 ];
 

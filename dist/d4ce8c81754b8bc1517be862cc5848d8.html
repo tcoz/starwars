@@ -1,0 +1,16 @@
+<div [ngStyle]="popup_style" class="disabler_base"></div>
+<div [ngStyle]="popup_style" class="popup_holder">
+
+    <div class="popup_message_style">
+        <img class="popup_icon_style" src="assets/images/emperor.jpg" />
+        <div class="popup_blurb popup_padding">
+            {{ message }}
+        </div>
+        <div class="popup_padding">
+            <div class="ok_button" (click)="onOkClick ( )">
+                Ok
+            </div>
+        </div>
+    </div>
+
+</div>

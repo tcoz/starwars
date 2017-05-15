@@ -45,7 +45,7 @@ CharacterListComponent.annotations = [
     new Component ( {
         selector: 'character-list',
         templateUrl: require ( './characterlist.component.html' ),
-        styleUrls: [ 'public/src/flair/characterlist/characterlist.component.css' ]
+        styleUrls: [ 'assets/css/characterlist.component.css' ]
     } )
 ];
 export { CharacterListComponent }

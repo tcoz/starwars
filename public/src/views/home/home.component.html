@@ -1,18 +1,17 @@
-<div class="widget_holder">
-    <div class="table_row">
-        <div class="super_title_text">
-            Star Wars Data!
-        </div>
-        <div class="widget_cell">
-            <character-list></character-list>
-        </div>
-        <div class="widget_cell">
-            <films-list></films-list>
-        </div>
+<!-- Get Bootstrappy! Note that I've set up BootStrap to be bundled and processed by Webpack.-->
+<div class="list_holder container-fluid">
+
+    <div class="col-sm-12 super_title_text">
+        Star Wars Data!
     </div>
-    <div class="table_row">
-        <div class="widget_cell">
-            <film-detail></film-detail>
-        </div>
+    <div class="col-sm-6">
+        <character-list></character-list>
     </div>
+    <div class="col-sm-6">
+        <films-list></films-list>
+    </div>
+    <div class="col-sm-12">
+        <film-detail></film-detail>
+    </div>
+
 </div>

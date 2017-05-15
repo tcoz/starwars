@@ -1,0 +1,14 @@
+<div class="list_holder">
+    <div class="list_title">Characters ({{ characters?.length || 0 }})</div>
+    <div class="selected_character">
+        {{ selected_character }}
+    </div>
+    <div class="list_item_holder">
+        <div *ngFor="let obj of characters">
+            <character-list-item
+                    [data]="obj"
+                    (emitter)="onEmitter ( obj )">
+            </character-list-item>
+        </div>
+    </div>
+</div>

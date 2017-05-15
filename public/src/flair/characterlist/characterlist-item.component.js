@@ -22,7 +22,7 @@ class CharacterListItemComponent {
 CharacterListItemComponent.annotations = [
     new Component ( {
         selector: 'character-list-item',
-        styleUrls: [ 'public/src/flair/characterlist/characterlist.component.css' ],
+        styleUrls: [ 'assets/css/characterlist.component.css' ],
         inputs: [ 'data' ],
         outputs: [ 'emitter' ],
         queries: {

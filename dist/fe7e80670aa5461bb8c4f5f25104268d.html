@@ -1,0 +1,19 @@
+<div class="list_holder">
+    <div class="list_title">Films ({{ films?.length || 0 }})</div>
+    <div class="list_sorter">Sort by:
+        <span (click)="sortFilms ( 'title' )">[ title ]</span>
+        <span (click)="sortFilms ( 'date' )">[ date ]</span>
+    </div>
+    <div class="list_item_holder">
+        <div *ngFor="let obj of films">
+            <films-list-item
+                    [data]="obj"
+                    (emitter)="onEmitter ( obj )">
+            </films-list-item>
+        </div>
+        <div [ngStyle]="{ display : ( films.length === 0 ? '' : 'none' ), color : 'red', 'text-align' : 'center' }"
+             class="list_item">
+            <b>Select a Character!</b>
+        </div>
+    </div>
+</div>

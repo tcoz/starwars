@@ -2,7 +2,7 @@ import { Http } from '@angular/http';
 import { Notes, Note } from './notifier.service';
 import 'rxjs/add/operator/map';
 
-// For dev, kick over to localhost, otherwise leave it alone.
+// For two-project dev, kick over to localhost, otherwise leave it alone.
 const domain = window.location.hostname === 'localhost' ? 'http://localhost:8888/' : '';
 const Operations = {
     NO_OP : 'home',
@@ -22,6 +22,8 @@ class Film {
 
     constructor ( data = {} ) {
         // add some semi-robust default arg checking etc.
+        // may not typically do this. Note that "data.characters || val"
+        // would crash if !data.
         this.characters = !!data.characters ? data.characters : [];
         this.created = !!data.created ? data.created : '';
         this.director = !!data.director ? data.director : '';
@@ -49,7 +51,6 @@ class StarWarsService {
     }
 
     constructor ( http ) {
-        this.Rx = require ( 'rxjs' );
         this.http = http;
     }
 
@@ -61,8 +62,8 @@ class StarWarsService {
      */
     transactData ( operation, response_note, callback ) {
 
-        // Some rxjs Observable stuff here.
-        // All non-blocking
+        // Some rxjs stuff here,
+        // Angular 2 builds a lot of it right in.
         let svc = this.http.get( operation )
             .map ( resp => resp.json () );
 

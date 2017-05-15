@@ -25,7 +25,7 @@ class FilmsListItemComponent {
 FilmsListItemComponent.annotations = [
     new Component ( {
         selector: 'films-list-item',
-        styleUrls: [ 'public/src/flair/filmslist/filmslist.component.css' ],
+        styleUrls: [ 'assets/css/filmslist.component.css' ],
         inputs: [ 'data' ],
         outputs: [ 'emitter' ],
         template: `

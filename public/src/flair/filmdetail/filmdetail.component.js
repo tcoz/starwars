@@ -12,6 +12,7 @@ class FilmDetailComponent {
         this.noteSvc = notifierService;
         this.data = {};
         this.display_properties = [];
+        this.film_title = 'none';
     }
 
     ngOnInit ( ) {
@@ -27,6 +28,7 @@ class FilmDetailComponent {
     onNotifier ( note ) {
         if ( note.name === Notes.FILM_SELECTED ) {
             this.data = note.data;
+            this.film_title = note.data.title;
             this.data.created = new Date ( this.data.created ).toLocaleDateString();
             this.data.released = new Date ( this.data.released ).toLocaleDateString();
             this.data.edited = new Date ( this.data.edited ).toLocaleDateString();
@@ -39,7 +41,7 @@ FilmDetailComponent.annotations = [
     new Component ( {
         selector: 'film-detail',
         templateUrl: require ( './filmdetail.component.html' ),
-        styleUrls: [ 'public/src/flair/filmdetail/filmdetail.component.css' ]
+        styleUrls: [ 'assets/css/filmdetail.component.css' ]
     } )
 ];
 export { FilmDetailComponent }

@@ -6,7 +6,7 @@ class HomeComponent {
 HomeComponent.annotations = [
     new Component ( {
        templateUrl: require ( './home.component.html' ),
-        styleUrls: [ 'public/src/views/home/home.component.css' ]
+        styleUrls: [ 'assets/css/home.component.css' ]
     } )
 ];
 
